@@ -1,0 +1,5 @@
+BASE_URL = "https://alpha.business-t.berekebank.kz"
+LOGIN = f"{BASE_URL}/customer/login"
+AUTH_PERSON_ADD = f"{BASE_URL}/customer/personal-page/authorized-persons/add"
+AUTH_PERSON_APPLICATIONS = f"{BASE_URL}/customer/personal-page/authorized-persons/applications"
+AUTH_PERSON = f"{BASE_URL}/customer/personal-page/authorized-persons"

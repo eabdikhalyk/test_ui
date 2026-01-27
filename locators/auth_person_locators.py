@@ -1,0 +1,17 @@
+from selenium.webdriver.common.by import By
+
+INPUT_IIN = (By.XPATH,"//input[@class='FieldInput Input-Field' and @maxlength='12']")
+INPUT_NUMBER = (By.XPATH,"//input[@class='FieldInput Input-Field input-autofill']")
+CONTINUE_BUTTON = (By.XPATH,"//span[text()='Продолжить']")
+SIGN_BUTTON = (By.XPATH,"//span[text()='Подписать']")
+SMS_CODE = (By.XPATH,"//div[@class='InputOTP-InputContainer']//input")
+SUCCESSFUL_TEXT = (By.XPATH,"//p[contains(text(),'Отправили ссылку в СМС на номер ')]")
+CARD_BUTTON_WITH_SENT_INVITATION_STATUS = (By.XPATH,"//span[normalize-space()='Приглашение отправлено']/ancestor::div[3]/button")
+CANCEL_BUTTON = (By.XPATH,"//span[@class='Typography Typography_variant_text-s Typography_color_error ListItemText-TextPrimary']")
+CONFIRM_CANCEL = (By.XPATH,"//button[@class='ButtonBase ButtonNext ButtonNext_variant_contained ButtonNext_size_m ButtonNext_color_primary']")
+ALERT_TITLE = (By.XPATH,"//div[@class='Alert-Content']//div[@class='Alert-Title']")
+CARD_BUTTON_WITHOUT_BLOCKED = (By.XPATH,"//p[normalize-space()='С правом подписи']   /ancestor::div[3]   [not(.//span[normalize-space()='Доступ временно закрыт'])]   //button")
+BLOCK_BUTTON = (By.XPATH,"//span[contains(text(),'Закрыть доступ на время')]")
+CONFIRM_BUTTON = (By.XPATH,"//span[text()='Да']")
+CARD_BUTTON_WITH_BLOCKED = (By.XPATH,"//span[normalize-space()='Доступ временно закрыт']/ancestor::div[3]/button")
+UNBLOCK_BUTTON =(By.XPATH,"//span[contains(text(),'Вернуть доступ')]")
