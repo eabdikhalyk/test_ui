@@ -1,4 +1,4 @@
-from locators.doc_verification_locators import VALID_DOC_ID, INVALID_DOC_ID
+from locators.customer.doc_verification_locators import VALID_DOC_ID, INVALID_DOC_ID
 from pages.customer.document_verification_page import DocumentVerification
 
 

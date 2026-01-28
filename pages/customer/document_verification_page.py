@@ -1,5 +1,5 @@
 from data.urls.url_doc_verifcation import DOC_VERIFICATION
-from locators.doc_verification_locators import INPUT_ID, BUTTON, RESULT
+from locators.customer.doc_verification_locators import INPUT_ID, BUTTON, RESULT
 from pages.base_page.base_page import BasePage
 from selenium.webdriver.remote.webdriver import WebDriver
 

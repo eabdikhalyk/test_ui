@@ -4,10 +4,10 @@ from selenium.webdriver.remote.webdriver import WebDriver
 
 from data.generator import GeneratorData
 from data.urls.url_auth_person import AUTH_PERSON_ADD, AUTH_PERSON_APPLICATIONS, AUTH_PERSON
-from locators.auth_person_locators import INPUT_IIN, INPUT_NUMBER, CONTINUE_BUTTON, SIGN_BUTTON, SMS_CODE, \
+from locators.customer.auth_person_locators import INPUT_IIN, INPUT_NUMBER, CONTINUE_BUTTON, SIGN_BUTTON, SMS_CODE, \
     SUCCESSFUL_TEXT, CARD_BUTTON_WITH_SENT_INVITATION_STATUS, CANCEL_BUTTON, CONFIRM_CANCEL, \
     ALERT_TITLE, CARD_BUTTON_WITHOUT_BLOCKED, BLOCK_BUTTON, CONFIRM_BUTTON, CARD_BUTTON_WITH_BLOCKED, UNBLOCK_BUTTON
-from locators.login_locators import MAIN_TITLE
+from locators.customer.login_locators import MAIN_TITLE
 from pages.base_page.base_page import BasePage
 
 

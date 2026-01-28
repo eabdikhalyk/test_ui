@@ -1,5 +1,5 @@
 from data.urls.url_auth_person import LOGIN
-from locators.login_locators import USER_NAME, PASSWORD, BUTTON, MAIN_TITLE
+from locators.customer.login_locators import USER_NAME, PASSWORD, BUTTON, MAIN_TITLE
 from pages.base_page.base_page import BasePage
 from selenium.webdriver.remote.webdriver import WebDriver
 

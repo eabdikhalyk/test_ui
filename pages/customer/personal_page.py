@@ -2,8 +2,8 @@ import time
 
 from data.generator import GeneratorData
 from data.urls.url_personal import PERSONAL_PAGE_DETAILS
-from locators.login_locators import MAIN_TITLE
-from locators.personal_details_locators import EDIT_BUTTON, CONTINUE_BUTTON, INPUT_NUMBER, CHECKBOX, \
+from locators.customer.login_locators import MAIN_TITLE
+from locators.customer.personal_details_locators import EDIT_BUTTON, CONTINUE_BUTTON, INPUT_NUMBER, CHECKBOX, \
     DIALOG_CONTINUE_BUTTON, SMS_CODE, ALERT_TITLE
 from pages.base_page.base_page import BasePage
 from selenium.webdriver.remote.webdriver import WebDriver

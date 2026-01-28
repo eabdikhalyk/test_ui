@@ -1,3 +1,5 @@
+import time
+
 import pytest
 from selenium import webdriver
 from logs.logger import get_logs
@@ -19,4 +21,5 @@ def driver():
     my_driver.maximize_window()
     yield my_driver
     log.info(f"closing driver")
+    time.sleep(2)
     my_driver.quit()

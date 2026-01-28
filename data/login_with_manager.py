@@ -2,11 +2,9 @@ import os
 
 from dotenv import load_dotenv
 from pages.manager.login_page import LoginPage
-from pages.customer.login_page import LoginPage
 from tests.conftest import driver
 
-
-def login_with_user(driver,username, password):
+def login_with_manager(driver,username, password):
     load_dotenv()
     username = os.getenv(username)
     password = os.getenv(password)
