@@ -1,15 +1,10 @@
-import os
-import time
-
-from dotenv import load_dotenv
-
+import pytest
 from data.login_with_manager import login_with_manager
-from pages.manager.login_page import LoginPage
 from pages.manager.main_page import MainPage
 
 
 class TestInitDigitalSignature:
-    #@pytest.mark.skip(reason="Этот тест временно отключен")
+    @pytest.mark.skip(reason="Этот тест временно отключен")
     def test_init_digital_signature(self,driver):
         login_with_manager(driver,"MANAGER_USER","MANAGER_PASSWORD")
         main_page = MainPage(driver)

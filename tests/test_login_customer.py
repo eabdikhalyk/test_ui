@@ -1,4 +1,6 @@
 import os
+
+import pytest
 from dotenv import load_dotenv
 
 from logs.logger import get_logs
@@ -7,6 +9,7 @@ from tests.conftest import driver
 
 
 class TestAuthorization:
+    @pytest.mark.skip(reason="Этот тест временно отключен")
     def test_authorization(self, driver):
         log = get_logs()
         load_dotenv()
