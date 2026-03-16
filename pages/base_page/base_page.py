@@ -3,6 +3,7 @@ import os
 from selenium.common import NoSuchElementException, TimeoutException
 from selenium.webdriver.remote.webdriver import WebDriver
 from selenium.webdriver.remote.webelement import WebElement
+from selenium.webdriver.support.select import Select
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as ec
 
@@ -22,6 +23,10 @@ class BasePage():
     def _wait_until_element_is_visible(self, locator: tuple, time: int = 10):
         wait = WebDriverWait(self._driver, time)
         wait.until(ec.visibility_of_element_located(locator))
+
+    def _wait_until_invisibility_of_element(self, locator: tuple, time: int = 10):
+        wait = WebDriverWait(self._driver, time)
+        wait.until(ec.invisibility_of_element(locator))
 
     def _wait_until_element_is_clickable(self, locator: tuple, time: int = 10):
         wait = WebDriverWait(self._driver, time)
