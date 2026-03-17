@@ -42,7 +42,7 @@ class AuthorizedPersonPage(BasePage):
         inputs = super()._finds(locator=SMS_CODE)
         for input_element in inputs:
             input_element.send_keys("1")
-        time.sleep(1)
+        #time.sleep(1)
 
     def get_successful_text(self):
         return super()._get_text(locator=SUCCESSFUL_TEXT, time=60)

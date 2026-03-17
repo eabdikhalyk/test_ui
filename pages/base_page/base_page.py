@@ -41,11 +41,17 @@ class BasePage():
         wait.until(ec.presence_of_all_elements_located(locator))
 
     def _type(self, locator: tuple, text: str, time: int = 10):
-        self._wait_until_element_is_visible(locator, 10)
+        self._wait_until_element_is_clickable(locator,10)
+        #self._wait_until_element_is_visibe(locator, 10)
         self._find(locator).send_keys(text)
 
+    def _attach_file(self, locator: tuple, file_path: str, time: int = 10):
+        self._wait_presence_of_element_located(locator, time)
+        self._find(locator).send_keys(file_path)
+
     def _click(self, locator: tuple, time: int = 10):
-        self._wait_until_element_is_visible(locator, time)
+        #self._wait_until_element_is_visible(locator, time)
+        self._wait_until_element_is_clickable(locator, time)
         self._find(locator).click()
 
     def _open_url(self, url: str):

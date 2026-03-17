@@ -15,7 +15,7 @@ class LoginPage(BasePage):
     def execute(self, username: str, password: str):
         super()._type(USER_NAME, username,30)
         super()._type(PASSWORD, password,30)
-        time.sleep(5)
+        super()._wait_until_element_is_clickable(BUTTON)
         super()._click(BUTTON, 30)
 
     def get_title(self):
