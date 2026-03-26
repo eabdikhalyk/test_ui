@@ -19,7 +19,7 @@ STYLE_OF_LIGHT_BLUE = (By.XPATH,"/html/body/div[3]/ul/li[2]/div/span[1]")
 BUTTONS = (By.XPATH,"//span[starts-with(text(),'Название кнопки')]/following-sibling::input")
 LINKS_INPUT = (By.XPATH,"//span[contains(text(),'Ссылка для редиректа')]/following-sibling::input")
 BUTTON_SAVE = (By.XPATH,"//span[contains(text(),'Сохранить')]")
-
+RESULT = (By.XPATH,"//td[contains(text(),'CODE_OF_PRODUCT')]")
 #Text
 TEXT_CODE_OF_PRODUCT = "CODE_OF_PRODUCT"
 TEXT_NAME_OF_POPUP = "NAME_OF_POPUP"

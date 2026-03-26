@@ -7,6 +7,7 @@ from locators.arm.popup_locators import ADVERTISING_TAB, POPUP_TAB, CREATE_BUTTO
     POPUP_FILE_KZ, POPUP_FILE_RU, POPUP_FILE_EN, UPLOAD_FILE_KZ_INPUT, UPLOAD_FILE_RU_INPUT, UPLOAD_FILE_EN_INPUT, \
     STYLE_OF_BLUE, DEEP_LINK, DEEP_LINK_INPUT, BUTTONS, BUTTON_KZ_INPUT_1, BUTTON_EN_INPUT_1, BUTTON_RU_INPUT_1, \
     STYLE_OF_LIGHT_BLUE, LINKS_INPUT, LINK, BUTTON_KZ_INPUT_2, BUTTON_EN_INPUT_2, BUTTON_RU_INPUT_2, BUTTON_SAVE
+from locators.customer.doc_verification_locators import RESULT
 from pages.base_page.base_page import BasePage
 
 
@@ -60,6 +61,8 @@ class AdvertisementPage(BasePage):
     def save(self):
         super()._click(BUTTON_SAVE)
 
+    def get_result(self):
+        return super()._get_text(RESULT)
 
 
 

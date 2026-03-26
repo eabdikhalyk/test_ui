@@ -11,6 +11,7 @@ class TestPopup:
         advertising_page.add_popup()
         advertising_page.fill_form()
         advertising_page.save()
+
         time.sleep(5)
 
     def test_edit_popup(self, driver):
