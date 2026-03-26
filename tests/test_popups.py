@@ -12,10 +12,10 @@ class TestPopup:
         advertising_page.fill_form()
         advertising_page.save()
 
-        #time.sleep(5)
+        time.sleep(5)
 
     def test_edit_popup(self, driver):
-        print("Testing edit popup")
+        pass
 
     def test_delete_popup(self, driver):
         pass
