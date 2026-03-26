@@ -15,7 +15,7 @@ class TestPopup:
         time.sleep(5)
 
     def test_edit_popup(self, driver):
-        pass
+       print("test_edit_popup")
 
     def test_delete_popup(self, driver):
         pass
