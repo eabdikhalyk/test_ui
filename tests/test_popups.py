@@ -12,7 +12,7 @@ class TestPopup:
         advertising_page.fill_form()
         advertising_page.save()
 
-        time.sleep(7)
+        time.sleep(9)
 
     def test_edit_popup(self, driver):
         pass
